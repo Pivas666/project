@@ -1,3 +1,10 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+add-user:
+    path: /users
+    controller: \App\Controller\UserController::add
+
+get-user:
+    path: /users/{id}
+    controller: \App\Controller\UserController::get

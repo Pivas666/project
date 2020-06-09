@@ -1,7 +1,7 @@
 version: '3'
 services:
   web:
-    image: nginx
+    image: docker/nginx
     volumes:
       - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
       - .:/var/www/html
