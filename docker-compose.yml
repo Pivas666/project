@@ -24,7 +24,7 @@ services:
       - .:/app
     command: install
   db:
-    image: postgres:13
+    image: postgres:11
     restart: always
     environment:
       - POSTGRES_DB=${DB_NAME}
